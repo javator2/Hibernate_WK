@@ -7,8 +7,20 @@
     <groupId>pl.sdacademy</groupId>
     <artifactId>Hibernate</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-<dependencies>
+    <dependencies>
 
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
     <dependency>
@@ -16,6 +28,21 @@
         <artifactId>hibernate-core</artifactId>
         <version>5.3.6.Final</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.12</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.12</version>
+    </dependency>
+
 
 </dependencies>
 
